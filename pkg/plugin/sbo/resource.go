@@ -83,5 +83,5 @@ func (m Resource) GetDependentResourcesWith(owner framework.SerializableResource
 }
 
 func NewPluginResource() capability.PluginResource {
-	return &Resource{capability.NewSimplePluginResourceStem("api", capability.TypeInfo{Type: "rest-component", Versions: []string{"1"}})}
+	return &Resource{capability.NewSimplePluginResourceStem("service binding", capability.TypeInfo{Type: "operator", Versions: []string{"pre-0.24"}})}
 }
